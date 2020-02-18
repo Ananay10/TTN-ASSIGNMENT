@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="question12.css">
+</head>
+<body>
+	<div class="container">
+	<header>
+	<nav>
+	<div class="left-font">
+	<a href="">To The New</a> </div>
+	<div class="home-help">
+		<a href="">Home</a><span> | </span> <a href="">Quick Help</a> </div>
+
+</nav>
+</header>
+<hr class="clear"> </div>
+<section>
+ <form>
+  <legend>Bug Report</legend>
+  	<main>
+  Title*: <br>
+  <input type="text" autofocus required><br>
+  <br>
+  Description*: <br>
+  <textarea name="comment" form="usrform" required></textarea><br><br>
+  Operating System*: <br>
+  	<select id="opt" required>
+  	<option value="Windows XP">Windows XP</option>
+  	<option value="Windows 7">Windows 7</option>
+  	<option value="Windows 8">Windows 8</option>
+  	<option value="Windows 10">Windows 10</option></select> <br><br>
+  Product*: <br>
+  <select id="op2" required>
+  	<option value="Formoid">Formoid</option>
+  	<option value="Option 2">Option 2</option>
+  	<option value="Option 3">Option 3</option>
+  	<option value="Option 4">Option 4</option></select>	<br><br>
+  	Version*: <br>
+  	<input type="text" id="vers"><br><br>
+  	License*: <br>
+  <input type="radio" name="License" value="Free"> <span class="radio">Free</span>
+  <input type="radio" name="License1" value="Business" id="lic"> Business<br><br>
+  Severity*: <br>
+  <select id="op3">
+  	<option value="Critical">Critical</option>
+  	<option value="Medium">Medium</option>
+  	<option value="Low">Low</option> </select> <br><br>
+  Attachments:<br>
+        <div class="attachment"><spam class="selections">Select some files</spam>
+        	<input type="file" name="upload file">
+        	<button>Choose file</button> </div>
+        </main>
+        <footer>
+        <input type="submit" name="Send" value="Send">
+        
+    </footer>
+</form>	
+</section>
+
+
+</body>
+</html>

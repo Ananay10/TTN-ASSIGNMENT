@@ -1,0 +1,135 @@
+legend{
+    color: white;
+    background-color: #e3e1e1;
+   padding: 25px 20px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px
+    font-size: 100px;
+    font-family: "Courier New Lucida Console", Monospace;
+    color: black;
+    font-weight: bold;
+
+}
+input[type=text] {
+    width: 620px;
+    padding: 12px 10px;
+    margin: 4px 0;
+     box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 4px;  
+  }
+  select{
+        width: 620px;
+        padding: 12px 10px;
+        margin: 4px 0;
+        box-sizing: border-box;
+        border: 1px solid grey;
+        border-radius: 4px;
+        background-color: #7fff00;
+}
+input[type=submit]{
+    float: right;
+    background-color: #7fff00;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 12px 10px;
+    margin-top: 5px;
+    width: 100px;
+}
+footer{
+	position: relative;
+    display: block;
+	background-color: #e3e1e1;
+    height: 50px;
+    border: solid 1px white;
+    box-sizing: border-box;
+
+
+}
+#vers{
+	width: 400px;
+}
+textarea{
+	border-radius: 4px;
+	width: 620px;
+    height: 100px;
+}
+ul{
+	float: right;
+}
+.left-font{
+    float: left;
+    font-size: 40px;
+}
+.container{
+    padding: 10px 10px;
+}
+
+.home-help{
+    float: right;
+    color: #69a803;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+}
+.clear{
+    clear: both;
+}
+section{
+    display: block;
+    margin: 50px 20% 50px 20%;
+    border: 1px solid grey;
+}
+a{
+    text-decoration: none;
+    color: #69a803;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+}
+main{
+    margin-left: 50px
+}
+.radio{
+    margin-right: 350px;
+}
+.attach-file{
+    position: relative;
+    width: 620px;
+    padding: 10px 0;
+    border: solid 2px grey;
+    border-radius: 4px;
+
+}
+
+form input[type=file]{
+    margin-bottom: 10px;
+    opacity: 0%;
+    width: 120px;   
+}
+.attachment{
+    width: 520px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #F2F2F2;
+    font-weight: lighter;
+    box-sizing: border-box;;
+}
+button{
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: #8C8C8C;
+    font-weight: bold;
+}
+.selections{
+    margin-left: 15px;
+}
