@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        #os,
+        #product,
+        #severity {
+            background-color: #5bc0de;
+            border: 1px solid #46b8da;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .textfree {
+            margin-right: 200px;
+        }
+
+        form {
+            margin-left: 30%;
+        }
+
+        #header {
+            background-color: #5bc0de;
+            border: 1px solid #46b8da;
+            color: #fff;
+            font-weight: 700;
+            padding: 10px 10px;
+        }
+
+        #sendbutton {
+            background-color: #F2F2F2;
+            border: 1px solid #46b8da;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 4px;
+        }
+        .titlepage{
+            color: #5bc0de;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <span class="titlepage">
+            <h2>To The New</h2>
+        </span>
+        <form action="/action_page.php">
+            <div class="form-group row">
+                <div class="col-xs-6">
+                    <h3 id="header">Bug Report</h3>
+                    <label for="Title">Title:</label>
+                    <input type="text" class="form-control" id="title" placeholder="Enter title" name="title">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6">
+                    <label for="desc">Description:</label>
+                    <input type="text" class="form-control" id="desc" placeholder="Enter Description" name="desc">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6">
+                    <label for="os">Operating System:</label>
+                    <select class="form-control" id="os" name="os">
+                        <option>Windows XP</option>
+                        <option>Windows 7</option>
+                        <option>Windows 10</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6">
+                    <label for="product">Product:</label>
+                    <select class="form-control" id="product" name="product">
+                        <option>Formoid</option>
+                        <option>ABC</option>
+                        <option>DEF</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6">
+                    <label for="Version">Version:</label>
+                    <input type="text" class="form-control" id="Version" placeholder="Enter Version" name="Version">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6">
+                    <label for="License">License:</label><br>
+                    <input type="radio" name="remember" checked><span class="textfree"> Free</span>
+                    <input type="radio" name="remember"> Premium
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6">
+                    <label for="severity">Severity:</label>
+                    <select class="form-control" id="severity" name="severity">
+                        <option>Critical</option>
+                        <option>Non Cricitcal</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-xs-6">
+                    <div class="input-group input-file" name="fileupload">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-choose" type="button">Choose</button>
+                        </span>
+                        <input type="text" class="form-control" placeholder='No files selected...' />
+                        <span class="input-group-btn">
+                            <button class="btn btn-info btn-upload" type="button">Upload</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+
+                    <div class="form-group text-right" id="sendbutton">
+                        <button class="btn btn-info btn-lg" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
