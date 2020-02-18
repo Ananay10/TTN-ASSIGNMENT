@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Assignment</title>
+	<style>
+		body{
+			background-color: azure;
+			padding: 10px;
+		}
+		.container{
+			border: solid 1px black;
+			background-color: #f4f4f4;
+		}
+		.bg{
+			background-image: url("./photo.jpg");
+			background-position: center;
+			background-size: cover;
+			height: 300px;
+			width: 800px;
+			color: white;
+			text-align: center;
+			padding-top: 20px;
+			font-size: 20px;
+			background-repeat: no-repeat;
+
+		}
+	#first{
+		font-weight: bold; }
+		#second{
+			font-family: "Lucida Console", Monaco, monospace;
+		}
+		#third{
+			font-size: 25px;
+		}
+		#forth{
+			font-weight: bold;
+			font-family: "Lucida Console", Monaco, monospace;
+			font-size: 25px;
+			font-style: italic;
+		}
+		#pseudo{
+			background-color: #0e999c;
+			margin: 0;
+			padding: 0;
+			width: 500px
+		}
+		 #pseudo ul li:nth-child(even) {
+            color: #0000ff;
+            font-size: 20px;
+        }
+
+        #pseudo ul li::after {
+            content: " Content 'after'";
+        }
+
+        #pseudo ul li:last-child {
+            background-color: red;
+            border: solid 2px black;
+            width: 200px;
+        }
+       
+        
+        .combinators>p {
+            color: #a1a1a1;
+        }
+         .combinators> h2 {
+            color: #999000;
+            text-transform: uppercase;
+        }
+            input[type=text] {
+            width: 50%;
+            padding: 20px;
+            font-size: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #333;
+            color: #4fa14b;
+        }
+         input[type=text]:focus {
+            background-color: #777;
+        }
+
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+	<h2>Font Properties</h2>
+	<p id="first">Loremipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+	<p id="second">Loremipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+	<p id="third">Loremipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+	<p id="forth">Loremipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+</div>
+	
+	<div class="bg">
+		<h2>Background Image</h2>
+		<p>Loremipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+		</div>
+	 <div id="pseudo">
+            <h2>Pseudo classes</h2>
+            <ul>
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+                <li>fourth</li>
+                <span><li>fifth</li></span>
+            </ul>
+        </div>
+         <div class="combinators">
+            <h2>combinators</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio animi molestias? Perferendis,
+                culpa
+                tempora?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate nulla aperiam delectus
+                consequuntur commodi.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure nisi velit labore delectus quia eos!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat quam veritatis incidunt
+                necessitatibus rerum.</p>
+        </div>
+          <div id="attrib-select">
+            <h2>Attribute Selector</h2>
+            <input type="text" name="" id="">
+        </div>
+</body>
+</html>
