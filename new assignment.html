@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My page</title>
+        <style>
+           *{
+            box-shadow: border-box;
+           }
+           li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        li{
+            padding: 10px 0;
+            font-size: large;
+        }
+
+            li a:hover {
+                 background-color: white;
+                 color: black;
+                }
+           
+            
+            .button{
+                  background-color: #0341fc;
+                  color: white;
+                  padding: 15px 20px;
+                  text-align: center;
+                  font-weight: bold;
+                  float: right;
+                  border-radius: 4px;
+            }
+            header{
+                background-color: #03fcc2;
+                top: 0; 
+                position: relative;
+            }
+            #banner{
+                margin-bottom: 20px;
+                background-color: #cc6c8c;
+            }
+            main {
+            float: right;
+            width: 69%;
+            margin-right: 30px;
+            position: relative;
+        }
+            #imagedesc{
+                margin-bottom: 20px;
+            }
+            #mainimage{
+                float: left;
+                position: relative;
+                z-index: 3;
+            }
+            #imagetext{
+                position: relative;
+                left: 20px;
+            }
+             #userinfo {
+            margin-top: 25px; }
+              aside{
+            float: left;
+            width: 20%;
+            background-color: #03fcc2;
+            height: 600px;
+        }
+        p{
+            background-color: #f4f4f4;
+        }
+        table{
+            margin: auto;
+            width: 400px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <header>
+        <img src="ttn.png" width="50px" height="50px">
+        <button class="button">Log In</button>
+    </header>
+      <main>
+        <section id="banner">
+            <img src="apple.png" width="150px" height="150px">
+            <img src="android.png" width="150px" height="150px">
+            <img src="window.png" width="150px" height="150px">
+            <img src="ubuntu.png" width="150px" height="150px">
+        </section>
+         <section id="imagedesc">
+            <img src="messi.png" id="mainimage" width="300px" height="300px">
+            <article id="imagetext">
+                <p>
+                   Born and raised in central Argentina, Messi relocated to Spain to join Barcelona at age 13, for whom he made his competitive debut aged 17 in October 2004. He established himself as an integral player for the club within the next three years, and in his first uninterrupted season in 2008–09 he helped Barcelona achieve the first treble in Spanish football; that year, aged 22, Messi won his first Ballon d'Or. Three successful seasons followed, with Messi winning three consecutive Ballons d'Or, including an unprecedented fourth. During the 2011–12 season, he set the La Liga and European records for most goals scored in a single season, while establishing himself as Barcelona's all-time top scorer. The following two seasons, Messi finished second for the Ballon d'Or behind Cristiano Ronaldo—his perceived career rival—before regaining his best form during the 2014–15 campaign, becoming the all-time top scorer in La Liga and leading Barcelona to a historic second treble, after which he was awarded a fifth Ballon d'Or in 2015. Messi assumed the captaincy of Barcelona in 2018, and in 2019 he secured a record sixth Ballon d'Or.
+                </p>
+            </article>
+        </section>
+     <section id="userdata">
+            <form action="actionpage.php">
+                <span id="user_name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="enter name">
+                </span>
+                    <span>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="enter email">
+                </span>
+            </form>
+        </section>
+        <!-- table -->
+        <section id="userinfo">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">Name</th>
+                        <th rowspan="2">Competency</th>
+                    </tr>
+                    <tr>
+                        <th>First</th>
+                        <th>Last</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aditya</td>
+                        <td>Mishra</td>
+                        <td>JVM</td>
+                    </tr>
+                    <tr>
+                        <td>Ananay</td>
+                        <td>Badial</td>
+                        <td>FEEN</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+      <aside>
+        <!-- navigation -->
+        <nav>
+            <ul id="main-nav" style="list-style: none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>
