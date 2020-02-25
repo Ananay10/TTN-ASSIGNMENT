@@ -1,0 +1,6 @@
+main .box #lfloat, main .box #rfloat{
+    display: block;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+

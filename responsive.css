@@ -1,0 +1,167 @@
+/* CSS RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* global css */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.green-button {
+    color: #68ba8c;
+    border: 2px solid #68ba8c;
+    padding: 1rem 5rem;
+    border-radius: 5rem;
+    letter-spacing: 0.3rem;
+}
+
+.green-button:hover {
+    color: #fff;
+    background-color: #68ba8c;
+}
+
+/* Individual css */
+
+header {
+    /* height: 80vh; */
+    background: url(./img/cover.jpg) no-repeat center center/cover;
+    color: #f4f4f4;
+    font-weight: 600;
+}
+
+header .top {
+    padding: 5rem 0;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+header .site-heading {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav label, #hamburger{
+    display: none;
+}
+header nav ul li {
+    display: block;
+    float: left;
+    padding-right: 2rem;
+}
+
+header nav ul li:nth-child(3) {
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #f4f4f4;
+}
+
+header nav ul li a:hover {
+    color: #68ba8c;
+}
+
+header .cover-text {
+    text-align: center;
+    padding: 10rem;
+}
+
+header .cover-text .welcome {
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+}
+
+header .cover-text .travel {
+    display: inline-block;
+    padding: 0 7rem;
+    border-right: 1px solid #f4f4f4;
+    line-height: 2rem;
+}
+
+header .cover-text .gallery {
+    display: inline-block;
+    padding: 0 7rem;
+    line-height: 2rem;
+}
+
+header .cover-text i {
+    color: #68ba8c;
+}
+
+header .cover-text .ltext {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header .cover-text .text {
+    color: #777;
+}
+
+header .get-started {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+main .box {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    line-height: 2.5rem;
+}
+
+main .box img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+main .box #lfloat {
+    display: inline-block;
+    width: 30rem;
+    margin-right: 20rem;
+}
+
+main .box #rfloat {
+    display: inline-block;
+    width: 30rem;
+}
+
+main .box .box-header {
+    font-size: 2.35rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+main .box .box-content {
+    color: #777;
+    margin-bottom: 3rem;
+}
