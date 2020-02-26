@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+	font-family: 'Roboto', serif;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+p{
+	margin: 0.75rem 0;
+}
+
+/*UTILITY CLASS*/
+.container{
+	max-width: 1100px;
+	padding: 0 2rem;
+	margin: auto;
+	overflow: hidden;
+}
+.text-primary{
+	color: #93cb52;
+}
+.l-heading{
+	font-size: 4rem;
+	margin-bottom: 0.75rem;
+	line-height: 1.1;
+}
+.lead{
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+.list{
+	list-style: none;
+	margin: 0.5rem 0;
+}
+.list li{
+	padding: 0.5rem 0;
+	border-bottom: #444 dotted 1px;
+}
+.py-1{padding: 1rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+.p-1{padding: 1rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+.btn{
+	display: inline-block;
+	color: white;
+	background: #93cb52;
+	padding: 0.5rem 2rem;
+	border:none;
+	border-radius: 10px;
+}
+.btn:hover{
+	background: white;
+	color: #93cb52;
+	border: 2px solid #93cb52;
+	font-weight: bold;
+}
+.bg-light{
+	background: #f4f4f4;
+	color: #333;
+}
+.bg-dark{
+	background:  #333;;
+	color: white;
+}
+.btn-dark{
+	background: #333;
+	color: white;
+}
+.bg-primary{
+	background: #93cb52;
+	color: white;
+}
+.text-center{
+	text-align: center;
+}
+/*NAVAR*/
+#navbar{
+	background: #333;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	padding: 1rem;
+	z-index: 2;
+}
+#navbar ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	}
+#navbar ul li a{
+	color: white;
+	padding:  0.75rem;
+	margin: 0 0.25rem;
+}
+#navbar ul li a:hover{
+	background: #93cb52;
+	border-radius: 5px;
+}
+/*HEADER*/
+
+#showcase{
+	background: #333 url('./image/showcase.jpg') no-repeat center center/cover;
+	height: 100vh;
+	color: white;
+}
+#showcase .showcase-content{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 0 2rem;
+	/*/*OVERLAY*/
+	position: absolute;
+	top: 60px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+.m-heading{
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 0.75rem;
+	line-height: 1.1;
+}
+#What .items{
+	display: flex;
+}
+#What .items .item{
+	flex:1;
+	text-align: center;
+}
+#What .items .item i{
+	background: #93cb52;
+	padding: 1rem;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+
+
+#who{
+	display: flex;
+}
+#who div{
+	flex: 1;
+}
+#who .who-img{
+	background: url('./image/people.jpg') no-repeat center center/cover;
+}
+
+#clients .items{
+	display: flex;
+}
+#clients .items img{
+	display: block;
+	margin: auto;
+	width: 60%;	
+}
+
+/*Contact*/
+#contact{
+	display: flex;
+}
+#contact .map, .contact-form{
+	flex: 1;
+}
+.contact-form .form-group{
+	margin: 0.5rem;
+}
+.contact-form .form-group label{
+	display: block;
+}
+.contact-form .form-group input{
+	width: 100%;
+	padding: 0.3rem 0;
+}
+.contact-form .form-group textarea{
+	width: 100%;
+	padding: 1rem 0;
+}
+/*.map{
+	height: 100%;
+	width: 100%;
+}*/
