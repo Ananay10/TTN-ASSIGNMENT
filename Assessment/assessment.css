@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap')
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+/*font-family: 'Roboto', serif;*/
+}
+
+/*NAVBAR*/
+#navbar{
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+}
+a{
+	text-decoration: none;
+	color: #726E6d;
+}
+#navbar ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 0 20px;
+	margin-right: 5px;
+	}
+#navbar ul li{
+	color: #726E6d;
+}
+#navbar ul li #contact{
+	color: #504A4B;
+	font-weight: 800;
+}
+#navbar ul li:first-child::after{
+	content: '|';
+	padding: 0 7px;
+}
+#navbar ul li:first-child::before{
+	padding: 0 7px;
+}
+
+/*CONTENT*/
+
+.container{
+	height: 707px;
+	width: 100%;
+	overflow: none;
+	background: url('./backgroundimg.jpg')no-repeat center center/cover;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.content-middle{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+.content-left{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 20px;
+}
+.l-heading{
+	font-size: 55px;
+	color: white;
+	font-weight: lighter;
+}
+#bold{
+	font-weight: bold;
+}
+.lead{
+	color: white;
+	font-size: 40px;
+}
+
+ #usd{
+	font-size: 12px;
+}
+.entry-form{
+	background: white;
+	margin-top: 48px;
+	text-align: center;
+	margin-right: 20px;
+	width: 450px;
+	height: 350px;
+	opacity: 0.7;
+}
+.entry-top h3{
+	font-size: 22px;
+	color: gray;
+	font-weight: 900;
+}
+.entry-top p{
+	margin-top: -20px;
+	color: orange;
+}
+
+.form-group input{
+	font-size: 20px;
+	border: none;
+	margin-bottom: 30px;
+	background: none;
+	border-bottom: 1px solid #04DCC5;
+}
+.form-group input:focus{
+	outline: none;
+}
+
+input:focus::-webkit-input-placeholder  {
+  opacity: 0;
+}
+.btn{
+	margin-top: 35px;
+}
+#btn-green{
+	color: white;
+    background: #93cb52; 
+    border: 2px solid white;
+    padding: 1rem 2.5rem;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+#btn-green:hover {
+    color: #93cb52;
+    background-color: white;
+    transition: 0.5s;
+    border: 2px solid black;
+    border-radius: 5rem;
+    cursor: pointer;
+    width: 200px;
+}
+.lower{
+	margin: 50px 40px 20px 45px;
+	padding: 10px;
+	background: white;
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	/*width: 90%;*/
+}
+.item{
+	text-align: center;
+	flex-wrap: wrap;
+	width: calc(100% /4);
+	padding: 20px;
+}
+.item-text{
+	display: flex;
+	flex-direction: column;
+	
+}
+.item p{
+	margin-top: -10px;
+}
