@@ -1,0 +1,33 @@
+ .list{
+    color: #fff;
+    /* margin: 20px 10px; */
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.list button{
+    border-radius: 5px;
+    border: 0;
+    background-color: aquamarine;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+input{
+    width: 100px;
+}
+#inp-1{
+    border: 0;
+    background-color:lightblue;
+    color: yellow;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+.quantity{
+    background: orange;
+    padding: 5px;
+    border-radius: 5px; 
+    margin: 0px 10px;
+}  
